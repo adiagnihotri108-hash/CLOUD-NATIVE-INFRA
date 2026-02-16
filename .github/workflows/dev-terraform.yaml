@@ -38,7 +38,7 @@ jobs:
       
       - name: Terraform Init Dev
         working-directory: ./infra/env/dev
-        run: terraform init
+        run: terraform init -reconfigure
 
       - name: Terraform Validate Dev
         working-directory: ./infra/env/dev
